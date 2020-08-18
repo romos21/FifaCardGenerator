@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<input type="text" class="playerInput" name="player" id="player"/>
+<label for="player">player name: </label>
+<br/>
+
+<input type="text" class="playerInput" name="imgLink" id="imgLink"/>
+<label for="imgLink">player image(link): </label>
+
+<div class="ratesInput">
+
+    <div>
+        <input type="number" name="pace" id="pace"/>
+        <label for="pace">pace: </label>
+    </div>
+
+    <div>
+        <input type="number" name="dribbling" id="dribbling"/>
+        <label for="dribbling">dribbling: </label>
+    </div>
+
+</div>
+
+<div class="ratesInput">
+    <div>
+        <input type="number" name="shooting" id="shooting"/>
+        <label for="shooting">shooting: </label>
+    </div>
+
+    <div>
+        <input type="number" name="defence" id="defence"/>
+        <label for="defence">defence: </label>
+    </div>
+</div>
+
+
+<div class="ratesInput">
+    <div>
+        <input type="number" name="passing" id="passing"/>
+        <label for="passing">passing: </label>
+    </div>
+    <div>
+        <input type="number" name="physics" id="physics"/>
+        <label for="physics">physics: </label>
+    </div>
+</div>
+
+
+<h1>Choose position</h1>
+<div id="position" class="choosingPosition">
+
+    <div class="inputFlex" id="CBStyle">
+        <input type="radio" name="position" id="CB"/>
+        <label for="CB">CB</label>
+    </div>
+
+    <div class="inputFlex" id="LBStyle">
+        <input type="radio" name="position" id="LB" checked/>
+        <label for="LB">LB</label>
+    </div>
+
+    <div class="inputFlex" id="RBStyle">
+        <input type="radio" name="position" id="RB"/>
+        <label for="RB">RB</label>
+    </div>
+
+    <div class="inputFlex" id="CDMStyle">
+        <input type="radio" name="position" id="CDM"/>
+        <label for="CDM">CDM</label>
+    </div>
+
+    <div class="inputFlex" id="CMStyle">
+        <input type="radio" name="position" id="CM"/>
+        <label for="CM">CM</label>
+    </div>
+
+    <div class="inputFlex" id="CAMStyle">
+        <input type="radio" name="position" id="CAM"/>
+        <label for="CAM">CAM</label>
+    </div>
+
+    <div class="inputFlex" id="LMStyle">
+        <input type="radio" name="position" id="LM"/>
+        <label for="LM">LM</label>
+    </div>
+
+    <div class="inputFlex" id="RMStyle">
+        <input type="radio" name="position" id="RM"/>
+        <label for="RM">RM</label>
+    </div>
+
+    <div class="inputFlex" id="RWStyle">
+        <input type="radio" name="position" id="RW"/>
+        <label for="RW">RW</label>
+    </div>
+
+    <div class="inputFlex" id="LWStyle">
+        <input type="radio" name="position" id="LW"/>
+        <label for="LW">LW</label>
+    </div>
+
+    <div class="inputFlex" id="CFStyle">
+        <input type="radio" name="position" id="CF"/>
+        <label for="CF">CF</label>
+    </div>
+
+    <div class="inputFlex" id="STStyle">
+        <input type="radio" name="position" id="ST"/>
+        <label for="ST">ST</label>
+    </div>
+</div>
+<button type="button" id="create">create</button>
+<div class="cart" id="cart">
+    <div class="cartInfo">
+        <span id="cartRate"></span>
+        <span id="cartPosition"></span>
+        <div id="playerImg"></div>
+        <div id="playerName"></div>
+    </div>
+    <div class="cartStats">
+        <span id="PAC"></span>
+        <span id="SHO"></span>
+        <span id="PAS"></span>
+        <span id="DRI"></span>
+        <span id="DEF"></span>
+        <span id="PHY"></span>
+    </div>
+</div>
+<div>
+<h1>Add Team</h1>
+<div id="teamsForAdding">
+
+</div>
+</div>
+<h1>Your Competition</h1>
+<div id="teamsForCompetition">
+
+</div>
+<script src="index.js">
+</script>
+</body>
+</html>
